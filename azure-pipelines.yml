@@ -10,7 +10,7 @@ pool:
   #vmImage: ubuntu-latest
    name: lafi-pool
    demands:
-   - Agent.Name -equals lafi-pool-agent
+   - agent.Name -equals lafi-pool-agent
   
 
 steps:
