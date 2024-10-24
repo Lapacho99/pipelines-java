@@ -7,7 +7,11 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  #vmImage: ubuntu-latest
+  name: lafi-pool
+  demands:
+  - Agent.Name -equals lafi-pool-agent
+  
 
 steps:
 - task: Maven@3
