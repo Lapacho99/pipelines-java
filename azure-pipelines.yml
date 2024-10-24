@@ -7,10 +7,15 @@ trigger:
 - main
 
 pool:
-  #vmImage: ubuntu-latest
-   name: lafi-pool
-   demands:
+  name: lafi-pool
+  demands:
    - agent.name -equals lafi-pool-agent
+
+#pool:
+  #vmImage: ubuntu-latest
+#   name: lafi-pool
+#   demands:
+#   - agent.name -equals lafi-pool-agent
   
 
 steps:
